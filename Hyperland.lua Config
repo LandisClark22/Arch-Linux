@@ -217,6 +217,10 @@ hl.config({
     },
 })
 
+-- Brightness control
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl set 5%+>
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 5>
+
 hl.config({
   xwayland = {
     force_zero_scaling = true
